@@ -1,0 +1,6 @@
+@EmirPortfolioAI_HostAddress = http://localhost:5063
+
+GET {{EmirPortfolioAI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
