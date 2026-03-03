@@ -4,7 +4,15 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>c0c22ea3-94a7-4d00-9a2f-49307eb1e283</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="public\**" />
+    <Content Remove="public\**" />
+    <EmbeddedResource Remove="public\**" />
+    <None Remove="public\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.10" />
@@ -12,8 +20,6 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="DTOs\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
