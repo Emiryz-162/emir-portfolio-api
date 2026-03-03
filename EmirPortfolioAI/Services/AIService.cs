@@ -17,7 +17,7 @@ namespace EmirPortfolioAI.Services
 
         public async Task<string> GetResponseAsync(string userMessage)
         {
-            var apiKey = _configuration["AI:ApiKey"];
+            var apiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY");
 
             var requestBody = new
             {
