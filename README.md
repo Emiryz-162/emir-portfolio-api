@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤖 Emir AI Portfolio – Backend API
 
-## Getting Started
+Emir AI is an AI-powered portfolio assistant backend built with ASP.NET Core.
+It uses OpenAI's GPT-4.1-mini model to answer questions about Muhammet Emir Yilmaz's projects, skills, education and professional background in a conversational way.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- RESTful chat endpoint powered by OpenAI GPT-4.1-mini
+- Multi-language support (Turkish, English, German)
+- Context-aware responses based on developer's profile, projects and skills
+- Typing animation support (character-by-character streaming on frontend)
+- CORS enabled for cross-origin frontend communication
+
+---
+
+## 🔗 API Endpoints
+
+### `POST /api/chat`
+Send a message and receive an AI-generated response.
+
+**Request:**
+```json
+{
+  "message": "What technologies does Emir use?"
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Response:**
+```json
+{
+  "response": "Emir primarily works with ASP.NET Core, C#, SQL, React and Next.js..."
+}
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### `GET /api/chat/test`
+Test endpoint for quick debugging.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧰 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- ASP.NET Core 9.0
+- C#
+- RESTful API
+- OpenAI API (GPT-4.1-mini)
+- Dependency Injection
+- Swagger / OpenAPI
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Project Purpose
 
-## Deploy on Vercel
+This project serves as the backend for an interactive AI portfolio website.
+Instead of a static resume, visitors can chat with an AI assistant that knows about the developer's experience, projects and technical skills.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Main goals:
+- Building a production-ready REST API with ASP.NET Core
+- Integrating third-party AI APIs (OpenAI)
+- Clean architecture with service layer pattern
+- Multi-language conversational AI
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 👤 Developer
+
+Muhammet Emir Yilmaz
+Full Stack Developer
+
+LinkedIn: https://www.linkedin.com/in/emir-y/
+GitHub: https://github.com/Emiryz-162
+Email: yz.emir@hotmail.com
